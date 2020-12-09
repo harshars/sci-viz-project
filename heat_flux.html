@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>My first X3DOM page</title>
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
+    <style>
+        #sphere {
+            background:#54596D;
+        }
+
+        #sphere1 {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+<x3d id="sphere">
+    <scene id="sphere1">
+        <shape>
+            <appearance>
+                <ImageTexture  url="heat_flux.png"></ImageTexture>
+            </appearance>
+            <sphere radius='3'></sphere>
+        </shape>
+        <Transform translation='0 -4 0'>
+        <shape>
+            <appearance>
+                <ImageTexture  url="heat_flux_legend.png"></ImageTexture>
+            </appearance>
+            
+        </shape>
+    </Transform>
+    </scene>
+</x3d>
+</body>
+</html>
